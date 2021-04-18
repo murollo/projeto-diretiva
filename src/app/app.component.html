@@ -12,7 +12,7 @@
       </thead>
       <tbody>
         <tr *ngFor="let pessoa of pessoas">
-          <td>{{pessoas.indexOf(pessoa.nome) + 1}}</td>
+          <td>{{pessoas.indexOf(pessoa) + 1}}</td>
           <td>{{pessoa.nome}}</td>
           <td [style.color]="pegarCor(pessoa.idade)">{{pessoa.idade}}</td>
           <td>{{pessoa.cidade}}</td>
